@@ -1,0 +1,58 @@
+.body-login {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #FFB800, #FF8A00);
+}
+
+.login-container {
+    display: flex;
+    width: 35%;
+    padding: 1em;
+    gap: 10px;
+    border-radius: 1.6em;
+    flex-direction: column;
+    background-color: #fff;
+    flex-wrap: wrap;
+    border: 0.2em solid #FF8A00;
+}
+
+
+.button-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4em;
+    flex-wrap: wrap;
+}
+
+.button-login>button {
+    border: none;
+    padding: 0.9em 1.7em;
+    border-radius: 0.8em;
+    color: #fff;
+    font-size: 1em;
+}
+
+.button-login button.active {
+    background: linear-gradient(to right, #FFB800, #FF8A00);
+}
+
+.hr-login-form {
+    height: 0.2em;
+    background-color: #FF8A00;
+    border: none;
+}
+
+input:focus {
+  outline: none;
+}
+
+@media (max-width: 700px) {
+    .login-container {
+        width: 80%;
+    }
+}
+
