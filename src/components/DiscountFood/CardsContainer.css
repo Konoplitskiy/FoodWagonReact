@@ -1,0 +1,42 @@
+.card-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 10px;
+    gap: 10px;
+
+}
+
+.cont-does-work {
+    flex-direction: column;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding: 10px;
+    gap: 40px;
+        background: linear-gradient(to bottom,
+  #ffcf6749 0%,
+  rgba(253, 237, 202, 0) 100%);
+} 
+
+.cont-does-work p {
+    display: flex;
+    justify-content: center;
+    color: #F17228;
+    font-size: 3em;
+    font-weight: bold;
+    margin-top: 1em;
+}
+
+.section-does-work {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2em;
+}

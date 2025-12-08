@@ -1,0 +1,64 @@
+.image-and-info {
+    display: flex;
+    position: relative;
+}
+
+.image-and-info img {
+    border-radius:18px ;
+}
+
+.main-discount {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+}
+
+
+.position-sell {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+    border-radius: 0px 17px 0px 17px;
+    background-color: #ffbb00;
+    color: #ffffff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-weight: bold;
+}
+.position-sell:hover {
+    box-shadow: 0 8px 18px #f1d32861;
+
+}
+
+.sell-off>p {
+    font-size: 1.5em;
+    line-height: 100%;
+}
+
+.discount-number {
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.description-sell {
+    font-size: 1.2em;
+    color: #424242;
+}
+
+.fake-button {
+    display: inline-flex;
+    margin-top: 11px;
+    font-weight: bold;
+    border-radius: 0.4em;
+    color: #F17228;
+    padding: 0.417em 0.85em;
+    background: rgba(241, 114, 40, 0.2);
+}
+
+.fake-button:hover {
+    box-shadow: 0 8px 18px #f1282871;
+    
+}

@@ -9,6 +9,7 @@ import { faMotorcycle, faBagShopping, faMagnifyingGlass } from '@fortawesome/fre
 export default function Find({ setAddres, deliveryType, setDeliveryType }) {
 
     const [text, setText] = useState('');
+    
 
     return (
         <>

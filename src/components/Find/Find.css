@@ -7,6 +7,7 @@
 }
 
 .form--find-food {
+    margin-top: 80px;
     box-sizing: border-box;
     padding: 5em;
     display: flex;
@@ -31,6 +32,8 @@ h2 {
     background: #fff;
     flex-direction: column;
     border-radius: 0.9em;
+    box-shadow: 0 0 25px #757575;
+
 }
 
 
@@ -56,7 +59,8 @@ h2 {
 .span-deliveri p.active {
     color: #F17228;
     background: rgba(247, 114, 40, 0.1);
-
+    box-shadow: 0 8px 18px #757575;
+    transform: translateY(1px);
 }
 
 .span-deliveri p:hover {
@@ -77,6 +81,9 @@ h2 {
     color: black;
     font-size: 1em;
     width: 100%;
+    box-shadow: 0 8px 18px #757575;
+    
+
 }
 
 .form-input button {
@@ -91,6 +98,10 @@ h2 {
     border: none;
     border-radius: 0.5em;
     cursor: pointer;
+    font-size: 1.125em;
+    font-weight: bold;
+    box-shadow: 0 8px 18px #757575;
+    
 }
 
 .form-input button:hover {

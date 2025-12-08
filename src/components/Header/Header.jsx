@@ -1,15 +1,15 @@
 import './Header.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { 
-    faLocationDot, 
-    faUser, 
+import {
+    faLocationDot,
+    faUser,
     faBasketShopping,
     faUserCheck
 } from '@fortawesome/free-solid-svg-icons';
-import { useNavigate } from "react-router-dom"; 
+import { useNavigate } from "react-router-dom";
 import logo from '../../assets/images/logoFoodWagon.png';
 
-export default function Header({addres, deliveryType}) {
+export default function Header({ addres, deliveryType, basket }) {
 
     const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
 
@@ -17,7 +17,7 @@ export default function Header({addres, deliveryType}) {
     const navigateToLogin = () => navigate("/login");
 
     const handleLogout = () => {
-        localStorage.removeItem('isLoggedIn');   
+        localStorage.removeItem('isLoggedIn');
         navigate("/");
     }
     return (
@@ -32,15 +32,20 @@ export default function Header({addres, deliveryType}) {
                     <p className='text-bold-deliver'>{deliveryType} to:</p>
                     <FontAwesomeIcon className='location-icon' icon={faLocationDot} />
                     <p>Current Location</p>
-                    <a  className='href-header-location' href="https://uk.javascript.info/date#tasks" target='_blank'>
-                       {addres ? addres : 'Enter your addres'}
+                    <a className='href-header-location' href="https://www.canva.com/design/DAG53ihRwek/u29Cfxjp8Tff_8glExrV2A/edit?utm_content=DAG53ihRwek&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target='_blank'>
+                        {addres ? addres : 'Enter your addres'}
                     </a>
                 </div>
 
                 <div className='login-and-bascet'>
+                    <div className='bascet-position-relative'>
                     <FontAwesomeIcon className='bascet-icon' onClick={handleLogout} icon={faBasketShopping} />
+                        <div className='bascet-position-absolute'>
+                    <span>{basket}</span>
+                        </div>
+                    </div>
                     {isLoggedIn ? (
-                       <FontAwesomeIcon className='bascet-icon' onClick={handleLogout} icon={faUserCheck} />
+                        <FontAwesomeIcon className='bascet-icon' onClick={handleLogout} icon={faUserCheck} />
                     ) : (
                         <button onClick={navigateToLogin} type='button'>
                             <FontAwesomeIcon icon={faUser} /> Login
