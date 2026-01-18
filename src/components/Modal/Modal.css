@@ -1,9 +1,4 @@
-.info-with-modal {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4em;
-    padding: 0.4em;
-}
+
 
 dialog {
     border: 1px solid gray;
@@ -24,80 +19,4 @@ button:hover {
     box-shadow: 0 8px 18px #757575;
 }
 
-.container-photo  {
-    position: relative;
-}
 
-
-.container-button {
-    position: absolute;
-    top: 10px; 
-    right: 10px; 
-    z-index: 10;
-}
-
-.container-button > button {
-    background-color: #FF8A00;
-    border: none;
-    padding: 0.6em 1.5em;
-    border-radius: 0.4em;
-    color: white;
-    font-weight: bold;
-}
-
-
-.info-with-modal button {
-    padding: 0.4em 2em;
-    border: none;
-    background: linear-gradient(to right, #FFB800, #FF8A00);
-    border-radius: 0.5em;
-    margin-top: 0.2em;
-}
-
-.info-with-modal button:hover {
-    background: linear-gradient(to right, #ff4d4d, #ff1a1a, #cc0000);
-    transform: translateY(-1px);
-}
-
-.button-cont-buy {
-    display: flex;
-    justify-content: center;
-}
-
-.button-buy {
-    font-size: 1.1em;
-    color: #fff;
-    font-weight: bold;
-}
-
-
-.title-modal {
-    font-size: 3em;
-}
-.discount-modal-main {
-    display: flex;
-    gap: 0.4em;
-}
-
-.discount-modal-main  span {
-    font-size: 3em;
-}
-
-.discount-modal {
-    display: flex;
-    flex-direction: column;
-    background: #FFB800;
-    padding: 0.3em;
-    border-radius: 0.4em;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-.text-off-modal {
-    font-size: 1.3em;
-}
-
-.description-modal {
-    font-size: 1.4em;
-}

@@ -9,12 +9,10 @@ export default function Login() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirm] = useState('');
-    const [errors, setErrors] = useState({});        
-    const [touched, setTouched] = useState(false);  
+    const [errors, setErrors] = useState({});
+    const [touched, setTouched] = useState(false);
 
     const navigate = useNavigate();
-
-    
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -32,7 +30,7 @@ export default function Login() {
             }
         }
 
-        setErrors(newErrors);  
+        setErrors(newErrors);
 
         if (Object.keys(newErrors).length === 0) {
             alert(register ? "Реєстрація успішна!" : "Ви увійшли!");
@@ -59,14 +57,14 @@ export default function Login() {
                 </div>
                 <hr className="hr-login-form" />
 
-                {register ? 
+                {register ?
                     <RegisterForm
                         email={email} setEmail={setEmail}
                         password={password} setPassword={setPassword}
                         confirmPassword={confirmPassword} setConfirm={setConfirm}
                         errors={errors} handleSubmit={handleSubmit} touched={touched}
                     />
-                    : 
+                    :
                     <LoginForm
                         email={email} setEmail={setEmail}
                         password={password} setPassword={setPassword}

@@ -3,6 +3,11 @@ import Find from './components/Find/Find'
 import DiscountFood from './components/DiscountFood/DiscountFood'
 import DoesWork from './components/DoesWork/DoesWork.jsx';
 import Slider from './components/Slider/Slider.jsx';
+import RestoransShow from './components/RestoransShow/RestoransShow.jsx';
+import InstallApp from './components/installApp/installApp.jsx';
+import PromoCard from './components/PromoCard/PromoCard.jsx';
+import CallToAction from './components/CallToAction/CallToAction.jsx';
+import Footer from './components/Footer/Footer.jsx';
 import { vage, doesWork } from './data.js'
 import { useState } from 'react'
 import './components/DiscountFood/CardsContainer.css';
@@ -26,6 +31,11 @@ function App() {
         </div>
       </div>
       <Slider counter={setCounterBasket} />
+      <RestoransShow />
+      <InstallApp />
+      <PromoCard counter={setCounterBasket} />
+      <CallToAction />
+      <Footer />
     </>
   )
 }

@@ -1,0 +1,43 @@
+.main-call-action {
+    background-image: url(../../src/assets/fonts/CallToAction.png);
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    gap: 3em;
+    flex-wrap: wrap;
+}
+
+.text-call-action {
+    color: #fff;
+    font-weight: bold;
+    font-size: 3.5em;
+    display: flex;
+    justify-content: center;
+}
+
+.button-call-action {
+    border: none;
+    border-radius: 8px;
+    background: linear-gradient(to right, #F17228, #F15E28);
+    color: #fff;
+    padding: 1em;
+    display: flex;
+    align-items: center;
+    font-size: 1em;
+    box-shadow: 2px 2px 29px 3px #F17228;
+}
+
+.button-call-action:hover {
+    box-shadow: 2px 2px 29px 3px #F15E28;
+}
+
+@media (max-width: 614px) {
+    .text-call-action {
+        font-size: 2em;
+    }
+}

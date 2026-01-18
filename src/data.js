@@ -83,4 +83,117 @@ export const foods = [
     {id:6 , img: '/src/assets/images/sliderImg.png', title: 'Dancake', location: 'Cake World', price: 1.99, },
 ]
 
+export const restorans = [
+    {
+        id:0 ,
+        img: '/src/assets/images/restorans1.png',
+        discount: 20 ,
+        off: 'off',
+        fast: 'Fast' ,
+        imgMini: '/src/assets/images/foodWorld.png',
+        nameRest: 'Foodworld',
+        rating: 46,
+        button: 'Opens tomorrow',
+    },    {
+        id:1,
+        img: '/src/assets/images/restorans2.png',
+        discount: 15,
+        off: 'off',
+        fast: 'Fast',
+        imgMini: '/src/assets/images/pizzaHub.png',
+        nameRest: 'Pizzahub',
+        button: 'Opens tomorrow',
+        rating: 40,
+    },    {
+        id:2 ,
+        img: '/src/assets/images/restorans3.png',
+        discount: 10,
+        off: 'off',
+        fast: 'Fast',
+        imgMini: '/src/assets/images/donutsHut.png',
+        nameRest: 'Donuts hut',
+        button: 'Open Now',
+        rating: 20,
+    },    {
+        id:3 ,
+        img: '/src/assets/images/restorans4.png',
+        discount: 15,
+        off: 'off',
+        fast: 'fast',
+        imgMini: '/src/assets/images/subway.png',
+        nameRest: 'Donuts hut',
+        button: 'Open Now',
+        rating: 50,
+    },    {
+        id: 4,
+        img: '/src/assets/images/restorans5.png',
+        discount: 10,
+        off: 'off',
+        fast: 'Fast',
+        imgMini: '/src/assets/images/rubyTuesday.png',
+        nameRest: 'Ruby Tuesday',
+        button: 'Open Now',
+        rating: 26,
+    },    {
+        id: 5,
+        img:'/src/assets/images/restorans6.png' ,
+        discount: 25,
+        off: 'off',
+        fast: 'Fast',
+        imgMini: '/src/assets/images/kfc.png',
+        nameRest: 'Kuakata Fried Chicken',
+        button: 'Open Now',
+        rating: 53,
+    },    {
+        id: 6,
+        img: '/src/assets/images/restorans7.png',
+        discount: 10,
+        off: 'off',
+        fast: 'Fast',
+        imgMini: '/src/assets/images/redSquare.png',
+        nameRest: 'Red Square',
+        button: 'Open Now',
+        rating: 45,
+    },    {
+        id: 7,
+        img: '/src/assets/images/restorans8.png',
+        discount: 10,
+        off: 'off',
+        fast: 'Fast',
+        imgMini: '/src/assets/images/takoBell.png',
+        nameRest: 'Taco Bell',
+        button: 'Open Now',
+        rating: 35,
+    },
+]
 
+
+export const promoCard = [
+    {
+        id:1,
+        title:'Best deals',
+        titletwo:'Crispy Sandwiches', 
+        description: 'Enjoy the large size of sandwiches. Complete  perfect slice of sandwiches.',
+        img: '/src/assets/images/PromoCardImg/promoCardOne.png',
+        price: 240,
+
+    },
+    {
+        id:2,
+        title:'Celebrate  parties with',
+        titletwo:'Fried Chicken',
+        description: 'Get the best fried chicken smeared with a lip smacking lemon chili flavor. Check out best deals for fried chicken.',
+        img: '/src/assets/images/PromoCardImg/promoCardTwo.png',
+        price: 210,
+
+    },
+    {
+        id:3,
+        title:'Wanna eat hot & spicy',
+        titletwo: 'Pizza?',
+        description: 'Pair up with a friend and enjoy the hot and crispy pizza pops. Try it with the best deals.',
+        img: '/src/assets/images/PromoCardImg/promoCardTThree.png',
+        price: 220,
+
+    },
+]

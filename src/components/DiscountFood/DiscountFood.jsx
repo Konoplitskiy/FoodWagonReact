@@ -1,8 +1,10 @@
+import { faXmark } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './DiscountFood.css'
 import Modal from '../Modal/Modal'
 import { useState } from 'react'
 
-export default function DiscountFood({ data, counter}) {
+export default function DiscountFood({ data, counter }) {
     const [modal, setModal] = useState(false)
     function openModal() {
         setModal(true)
@@ -10,7 +12,7 @@ export default function DiscountFood({ data, counter}) {
 
     function buyCounter() {
         counter(Count => Count + 1);
-        setTimeout(() => {setModal(false)}, 350)   
+        setTimeout(() => { setModal(false) }, 350)
     }
 
     return (
@@ -34,25 +36,16 @@ export default function DiscountFood({ data, counter}) {
                 </div>
             </div>
             <Modal open={modal}>
-                <div>
-                    <div className='container-main'>
-                        <div className='container-button'>
-                            <button onClick={() => setModal(false)}>Close</button>
-                        </div>
+                <div className='modal-discount'>
+                    <div className='container-img-modal' >
+                        <img src={data.img} alt="" />
                     </div>
-                    <div className='info-with-modal'>
-                        <p className='title-modal'>{data.dishName}</p>
-                        <div className='discount-modal-main'>
-                            <span>${data.price}</span>
-                            <div className='discount-modal'>
-                                <p>{data.discount}%</p>
-                                <p className='text-off-modal'>{data.off}</p>
-                            </div>
-                        </div>
-                        <span className='description-modal'>{data.description}</span>
-                        <div className='button-cont-buy'>
-                        <button onClick={buyCounter}  className='button-buy'>Buy for {data.price}$</button>
-                        </div>
+                <button onClick={() => setModal(false)} className='close-position'><FontAwesomeIcon icon={faXmark} /></button>
+                    <div className='container-modal-info'>
+                        <p className='name-dish-modal'>{data.dishName}</p>
+                        <p className='price-modal'>${data.price}</p>
+                        <span className='description-modal-size'>{data.description}</span>
+                        <button onClick={buyCounter} className='button-buy'>Add to Card </button>
                     </div>
                 </div>
             </Modal>

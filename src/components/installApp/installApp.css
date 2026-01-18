@@ -1,0 +1,108 @@
+.container-install-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FEEFD0;
+
+}
+
+.info-install-app {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 1.3em;
+    margin: 3em;
+    background: #fff;
+    border-radius: 46px;
+    gap: 1.8em;
+    box-shadow: 5px 5px 30px #F5950080;
+}
+
+.color-text-install {
+    font-size: 2em;
+    font-weight: bold;
+    background: -webkit-linear-gradient(#FB3C00, #FFB800);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.button-install-app {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+
+.text-install-app {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    text-align: left;
+    width: 479px;
+    gap: 1em;
+}
+
+.one-text-install {
+    background: -webkit-linear-gradient(#FFB800, #FF8A00);
+    color: transparent;
+    background-clip: text;
+    font-weight: bold;
+    font-size: 4em;
+}
+
+.two-text-install {
+    color: #827E7E;
+    font-size: 1.1em;
+}
+
+.button-cont-app {
+    display: flex;
+    gap: 0.5em;
+}
+
+
+.button-install-click {
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: 0.3em;
+    background-color: #fff;
+    box-shadow: 5px 5px 30px #f59300a5;
+    padding: 0.6em;
+    color: #F17228;
+    cursor: pointer;
+}
+
+.icon-size-install {
+    font-size: 3em;
+}
+
+.info-button-install {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.button-action-text {
+    font-size:0.8em;
+    color: #616161 ;
+}
+
+.button-store-name {
+    font-size: 1.6em;
+    color: #212121;
+}
+
+@media(max-width: 1000px) {
+    .button-install-app>img {
+    width: 100%;
+    margin-bottom: 1.2em;
+}
+.text-install-app {
+    width: 100%;
+    padding: 1.2em;
+}
+}

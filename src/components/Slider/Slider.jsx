@@ -3,40 +3,58 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import { Navigation } from 'swiper/modules';
 import './Slider.css';
-import { foods} from '../../data.js';
+import { foods } from '../../data.js';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faLocationDot} from '@fortawesome/free-solid-svg-icons';
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons';
 
-export default function Slider({counter}) {
+export default function Slider({ counter }) {
     function buyCounter() {
-        counter(Count => Count +1)
+        counter(Count => Count + 1)
     }
 
     return (
         <>
-        <h3 className='slider-txt'> Popular items </h3>
-        <Swiper
-            modules={[Navigation]}
-            navigation
-            spaceBetween={5}
-            slidesPerView={5}
-            loop={true}
-            className="custom-swiper"
-        >
-            <div>
-            {foods.map(item => (
-                <SwiperSlide key={item.id}>
-                    <div className="card">
-                        <img src={item.img} alt="photo-card-wraper" />
-                        <span className='title-swiper'>{item.title}</span>
-                        <span className='location-swiper'>  <FontAwesomeIcon icon={faLocationDot} />{item.location}</span>
-                        <span className='price-swiper'>${item.price}</span>
-                        <button onClick={buyCounter} className='button-slider'>Order Now</button>
-                    </div>
-                </SwiperSlide>
-            ))}
-            </div>
-        </Swiper>
+            <h3 className='slider-txt'> Popular items </h3>
+            <Swiper
+                modules={[Navigation]}
+                navigation
+                spaceBetween={5}
+                slidesPerView={5}
+                loop={true}
+                breakpoints={{
+                    0: {
+                        slidesPerView: 1,
+                        spaceBetween: 10,
+                    },
+                    640: {
+                        slidesPerView: 2,
+                        spaceBetween: 15,
+                    },
+                    1024: {
+                        slidesPerView: 4,
+                        spaceBetween: 20,
+                    },
+                    1500: {
+                        slidesPerView: 5,
+                        spaceBetween: 20,
+                    },
+                }}
+                className="custom-swiper"
+            >
+                <div>
+                    {foods.map(item => (
+                        <SwiperSlide key={item.id}>
+                            <div className="card">
+                                <img src={item.img} alt="photo-card-wraper" />
+                                <span className='title-swiper'>{item.title}</span>
+                                <span className='location-swiper'>  <FontAwesomeIcon icon={faLocationDot} />{item.location}</span>
+                                <span className='price-swiper'>${item.price}</span>
+                                <button onClick={buyCounter} className='button-slider'>Order Now</button>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </div>
+            </Swiper>
         </>
     )
 }
